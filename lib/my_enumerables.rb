@@ -30,7 +30,17 @@ module Enumerable
     
   end
 
+  def my_none?    
+    val=true
+    self.my_each do |element|
+      val=false if yield(element) 
+    end
+    val
+  end
 
+
+
+  
 end
 
 # You will first have to define my_each
