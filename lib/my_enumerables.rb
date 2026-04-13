@@ -60,6 +60,21 @@ module Enumerable
 
   end
 
+  def my_inject(initial_value, &block)
+    #p yield
+    #yield(block)
+
+    result=initial_value
+    self.my_each do |element|
+      # increment, decrement, multiply, or divide the result
+      #result=0
+      
+    end
+
+    result
+    
+  end
+
 
 
 
